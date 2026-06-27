@@ -92,3 +92,10 @@ const projects = [
   ];
   
   export default projects;
+
+//   const clients = [
+//     {
+//         image: "/client/client1.png",
+//       },
+
+//   ]
