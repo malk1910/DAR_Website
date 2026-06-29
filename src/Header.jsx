@@ -1,25 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-
-// export default function Header({ title }) {
-//   return (
-//     <section className="header">
-//       <div className="container">
-
-//         <div className="breadcrumb">
-//           <Link to="/">Home</Link>
-//           <span> / </span>
-//           <span>{title}</span>
-//         </div> 
-
-//         <h1>{title}</h1>
-
-//         <p>Designing Ambitions, Realizing Visions</p>
-
-//       </div>
-//     </section>
-//   );
-// }
 
 import { Link } from "react-router-dom";
 

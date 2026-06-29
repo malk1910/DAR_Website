@@ -64,21 +64,21 @@ export default function Nav() {
                     About
                   </Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link to="/Services" className="nav-link">
                     Services 
                   </Link>
-                </li> */}
+                </li>
                 <li className="nav-item">
                   <Link to="/Projects" className="nav-link">
                     Projects 
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to="/Blog" className="nav-link">
                     Blog 
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link to="/Contact" className="nav-link">
                     Contact 

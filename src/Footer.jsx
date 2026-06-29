@@ -15,16 +15,16 @@ export default function Footer() {
               </p>
               <div className="social-icons-footer d-flex gap-2 mt-4">
                 <Link to="/" className="social-link">
-                  <i className="fa-brands fa-youtube"></i>
+                  <i className="fa-brands fa-facebook"></i>
                 </Link>
                 <Link to="/" className="social-link">
                   <i className="fa-brands fa-linkedin"></i>
                 </Link>
                 <Link to="/" className="social-link">
-                  <i className="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-x-twitter"></i>
                 </Link>
                 <Link to="/" className="social-link">
-                  <i className="fa-brands fa-x-twitter"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </Link>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                 <Link to="/About">About</Link>
                 <Link to="/Services"> Services </Link>
                 <Link to="/Projects">Projects</Link>
-                <Link to="/Blog">Blog</Link>
+                {/* <Link to="/Blog">Blog</Link> */}
 
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Footer() {
               <h4>Quick Links</h4>
               <div className="footer-links">
                 <Link to="/Contact" >Contact Us</Link>
-                <Link to="/Blog" >Blog</Link>
+                {/* <Link to="/Blog" >Blog</Link> */}
                 <Link to="/Policy" >Policy & Privacy </Link>
                 <Link to="/Terms" >Terms & Conditions</Link>
 

@@ -167,19 +167,7 @@ body {
 
   /* ----------Header style section ----------*/
 
-  /* .header{
-    background: var(--bg-sec-color);
-    padding-top: 150px;
-    padding-bottom: 70px;
-  }
-  .header h1{
-    color:white;
-    font-size: 52px;
-    font-weight: bolder;
-  }
-  .header p{
-    color:gainsboro;
-  } */
+
 
   .header{
     padding: 170px 0 100px;
@@ -220,4 +208,70 @@ body {
     font-size: 20px;
     color: rgba(255,255,255,.8);
     
+}
+
+  /* ----------Header (services, projects, contact) style section ----------*/
+
+
+.page-hero{
+
+    position: relative;
+
+    height: 500px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(1,17,49,.75);
+}
+
+.page-content{
+
+    position:relative;
+    z-index:2;
+
+    color:#fff;
+    text-align:center;
+}
+
+.page-content h1{
+
+    font-size:70px;
+    font-weight:800;
+}
+
+.page-content p{
+
+    font-size:20px;
+}
+
+
+@media(max-width:768px){
+
+.page-hero{
+
+    height:340px;
+}
+
+.page-content h1{
+
+    font-size:42px;
+}
+
+.page-content p{
+
+    font-size:18px;
+}
+
 }
