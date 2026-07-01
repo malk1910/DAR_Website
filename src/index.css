@@ -1954,3 +1954,37 @@ body {
 }
 
 } 
+/* Tablet */
+@media (max-width: 992px) {
+  .services-intro {
+    padding: 60px 20px;
+  }
+
+  .services-intro .section-title {
+    font-size: 2rem;
+  }
+
+  .services-text {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .services-intro {
+    padding: 50px 15px;
+  }
+
+  .services-intro .section-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    
+  }
+
+  .services-text {
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}

@@ -12,10 +12,10 @@ export default function Services() {
         bgImage={bg}
       />
 
-      <section className="services-intro">
-        <div className="container text-center">
+      <section className="services-intro py-5">
+        <div className="container text-center mb-4">
 
-          <h2 className="section-title">
+          <h2 className="section-title mx-auto">
             Building Excellence Across Every Sector
           </h2>
 
