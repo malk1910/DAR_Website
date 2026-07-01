@@ -250,7 +250,9 @@ body {
     font-size:70px;
     font-weight:800;
 }
-
+.page-content .breadcrumb{
+  font-size: 16px;
+}
 .page-content p{
 
     font-size:20px;
@@ -260,8 +262,9 @@ body {
 @media(max-width:768px){
 
 .page-hero{
-
+    background-color: rgba(14, 29, 60,0.75);
     height:340px;
+    background-image: none !important;
 }
 
 .page-content h1{
@@ -271,7 +274,7 @@ body {
 
 .page-content p{
 
-    font-size:18px;
+    font-size:16px;
 }
 
 }

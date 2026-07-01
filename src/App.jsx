@@ -5,6 +5,9 @@ import NotFound from "./NotFound";
 import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
+import Projects from "./Projects";
+import Services from "./Services";
+
 
 
  
@@ -17,6 +20,8 @@ const router = createHashRouter([
       { path: "", element: <Home /> },
       { path: "Home", element: <Home /> },
       { path: "About", element: <About /> },
+      { path: "Services", element: <Services /> },
+      { path: "Projects", element: <Projects /> },
       { path: "Contact", element: <Contact /> },
 
  

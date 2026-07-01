@@ -12,7 +12,7 @@ import infra from "./assets/infrastructure.png"
 import industrial from "./assets/industrial.png"
 import mech from "./assets/electromechanical.png"
 import eductional from "./assets/eductional.png"
-import projects from "./data/projectsData";
+import {projects , services} from "./data/projectsData";
 import HomeSlider from './HomeSlider'
 export default function Home() {
 
@@ -81,7 +81,7 @@ export default function Home() {
 <div className="row row-cols-1 row-cols-md-3 g-4">
   <div className="col">
     <div className="card h-100">
-    <img src={structural} class="card-img-top" alt="..."/>
+    <img src={structural} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Steel Structures</h5>
@@ -90,7 +90,7 @@ export default function Home() {
   </div>
   <div className="col">
     <div className="card h-100">
-    <img src={industrial} class="card-img-top" alt="..."/>
+    <img src={industrial} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Industrial Projects</h5>
@@ -99,7 +99,7 @@ export default function Home() {
   </div>
   <div className="col">
     <div className="card h-100">
-    <img src={medical} class="card-img-top" alt="..."/>
+    <img src={medical} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Medical Construction</h5>
@@ -108,7 +108,7 @@ export default function Home() {
   </div>
   <div className="col">
     <div className="card h-100">
-    <img src={eductional} class="card-img-top" alt="..."/>
+    <img src={eductional} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Eductional Constructions</h5>
@@ -118,7 +118,7 @@ export default function Home() {
 
   <div className="col">
     <div className="card h-100">
-    <img src={infra} class="card-img-top" alt="..."/>
+    <img src={infra} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Infrastructures & Civil works</h5>
@@ -127,7 +127,7 @@ export default function Home() {
   </div>
   <div className="col">
     <div className="card h-100">
-    <img src={mech} class="card-img-top" alt="..."/>
+    <img src={mech} className="card-img-top" alt="..."/>
 
       <div className="card-body">
         <h5 className="card-title">Electromechanical Works</h5>
