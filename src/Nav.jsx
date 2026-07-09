@@ -23,7 +23,7 @@ export default function Nav() {
   return (
     <>
       <div>
-      <nav className={`navbar navbar-expand-lg ${scrolled ? "navbar-scrolled" : ""}`}>
+      <nav className={`navbar navbar-expand-lg ${scrolled ? "navbar-scrolled  bg-opacity-50" : ""}`}>
         {/* <nav className="navbar navbar-expand-lg bg-body-tertiary py-0"> */}
           <div className="container-fluid container">
             {/* ------The Logo------ */}
