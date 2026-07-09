@@ -4,6 +4,7 @@ export default function PageHero({
   title,
   subtitle,
   bgImage,
+  breadcrumb,
   children,
 }) {
   return (
@@ -18,9 +19,19 @@ export default function PageHero({
 
         <div className="container page-content">
 
-          <p className="breadcrumb">
+
+        <p className="breadcrumb">
+  {breadcrumb ? (
+    breadcrumb
+  ) : (
+    <>
+      <Link to="/">Home</Link> / {title}
+    </>
+  )}
+</p>
+          {/* <p className="breadcrumb">
             <Link to="/">Home</Link> / {title}
-          </p>
+          </p> */}
 
           <h1>{title}</h1>
 

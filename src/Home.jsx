@@ -270,6 +270,7 @@ export default function Home() {
       type="email"
       placeholder="Email Address"
       required
+      className='text-success-emphasis'
     />
 
     {/* <input

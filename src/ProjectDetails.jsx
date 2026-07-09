@@ -310,7 +310,7 @@
 
 
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projects } from "./data/projectsData";
 import PageHero from "./PageHero";
 
@@ -328,10 +328,24 @@ export default function ProjectDetails() {
 
     return(
         <>
+{/* <PageHero
+  title={project.title}
+  bgImage={project.image}
+/> */}
+
 <PageHero
   title={project.title}
-//   subtitle={project.category}
+  subtitle={project.category}
   bgImage={project.image}
+  breadcrumb={
+    <>
+      <Link to="/">Home</Link>
+      {" / "}
+      <Link to="/Projects">Projects</Link>
+      {" / "}
+      {project.title}
+    </>
+  }
 />
 
 <section className="project-overview">

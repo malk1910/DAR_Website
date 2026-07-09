@@ -7,7 +7,7 @@ export default function Header({ title }) {
     <div className="about-header">
 
       <p>
-        <Link to="/">Home</Link> / {title}
+        <Link to="/">Home</Link> / {title} 
       </p>
 
       <h1>{title}</h1>

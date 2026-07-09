@@ -84,9 +84,6 @@ body {
     padding:5px 15px; 
   }
 
-  .navbar-toggler{
-    background-color: white !important;
-  }
 
   .navbar {
     position: fixed !important;
@@ -115,6 +112,56 @@ body {
     border-bottom: 1px solid rgba(95,117,176,.2) !important;
   }
  
+  .navbar-toggler{
+    border: none;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .menu-icon{
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: white;
+    transition: .35s;
+  }
+  
+  .menu-icon::before,
+  .menu-icon::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:28px;
+    height:2px;
+    background:white;
+    transition:.35s;
+  }
+  
+  .menu-icon::before{
+    top:-8px;
+  }
+  
+  .menu-icon::after{
+    top:8px;
+  }
+  
+  .menu-icon.open{
+    background: transparent;
+  }
+  
+  .menu-icon.open::before{
+    top:0;
+    transform:rotate(45deg);
+  }
+  
+  .menu-icon.open::after{
+    top:0;
+    transform:rotate(-45deg);
+  }
+
+  
+
   /* ========================= */
 /* Responsive Navbar */
 /* ========================= */
@@ -135,14 +182,42 @@ body {
   }
 
   .navbar-collapse{
+    display:block !important;
+
+    overflow:hidden;
+
+    max-height:0;
+
+    opacity:0;
+
+    transition:
+      max-height .45s ease,
+      opacity .35s ease,
+      margin .35s ease;
+
+    margin-top:0;
+    text-align: center;
+
+}
+
+.navbar-collapse.show{
+
+    max-height:500px;
+
+    opacity:1;
+
+    margin-top:15px;
+}
+
+  /* .navbar-collapse{
     margin-top: 15px;
     padding: 20px;
 
     background: rgba(1,17,49,.95);
     border-radius: 15px;
-
+ 
     text-align: center;
-  }
+  } */
 
   .navbar-nav{
     gap: 15px;
@@ -168,7 +243,7 @@ body {
 @media (max-width:576px){
 
   .navbar-brand img{
-    width:50px !important;
+    width:80px !important;
     height:50px !important;
   }
 
@@ -181,6 +256,8 @@ body {
   }
 
 }
+
+
 /* ----------------FOOTER SECTION--------------- */
 
 .footer {
@@ -944,13 +1021,14 @@ body {
 
   padding-top:120px;
 
-  text-align:center;
+
 
   color:white;
 }
 
 .about-header p{
-
+   padding-left: 100px;
+   padding-top: 40px;
   color:white;
 }
 
@@ -959,15 +1037,18 @@ body {
   color:white;
   text-decoration:none;
 }
-
+.about-header a:hover{
+  color:var(--border-color);
+  transition: 0.3s;
+}
 .about-header h1{
-
+  text-align:center;
   font-size:72px;
   font-weight:800;
 }
 
 .about-header h5{
-
+  text-align:center;
   font-size:28px;
   font-weight:300;
 }
@@ -1459,9 +1540,6 @@ body {
 .contact-form{
 
   border:1px solid #e5e5e5;
-
-  padding-left:50px;
-
   display:flex;
 
   flex-direction:column;
@@ -1474,8 +1552,9 @@ body {
 .contact-form select,
 .contact-form textarea{
 
-  width:100%;
 
+  width:100%;
+  
   padding:15px 20px;
 
   border:1px solid #ddd;
@@ -1493,7 +1572,12 @@ body {
 
   border-color:var(--border-color);
 }
-
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-form select {
+  color: gray;
+  opacity: 0.8; 
+}
 
 .submit-btn{
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import LogowithSlogan from "./assets/LogowithSlogan.png"
 import { useEffect, useState } from "react";
-
+import Collapse from "bootstrap/js/dist/collapse";
 
 export default function Nav() {
 
@@ -20,6 +20,27 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // For Opening navbar in the small screens
+
+  const [isOpen, setIsOpen] = useState(false);
+
+const closeMenu = () => setIsOpen(false);
+
+// For x & burgerLines
+
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth >= 992) {
+      setIsOpen(false);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  return () =>
+    window.removeEventListener("resize", handleResize);
+}, []);
+
   return (
     <>
       <div>
@@ -31,7 +52,7 @@ export default function Nav() {
               <img
                 src={LogowithSlogan}
                 alt="DAR"
-                style={{ width: "80px", height: "80px", objectFit: "contain" }}
+                style={{ width: "100px", height: "80px", objectFit: "contain" }}
               />
              
             </div>
@@ -44,33 +65,43 @@ export default function Nav() {
               aria-controls="navbarTogglerDemo02"
               aria-expanded="false" 
               aria-label="Toggle navigation"
+
+                onClick={() => setIsOpen(!isOpen)}
             
             >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <span className={`menu-icon ${isOpen ? "open" : ""}`}></span>
+
             </button>
+
             <div
+  className={`collapse navbar-collapse justify-content-center ${
+    isOpen ? "show" : ""
+  }`}
+>
+            {/* <div
               className="collapse navbar-collapse  justify-content-center"
               id="navbarTogglerDemo02"
-            >
+            > */}
               {/* ------List------ */}
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto px-5 py-2 ">
                 <li className="nav-item ">
-                  <Link to="/Home" className="nav-link">
+                  <Link to="/Home" className="nav-link"  onClick={closeMenu}>
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/About" className="nav-link">
+                  <Link to="/About" className="nav-link"  onClick={closeMenu}>
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Services" className="nav-link">
+                  <Link to="/Services" className="nav-link"  onClick={closeMenu}>
                     Services 
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Projects" className="nav-link">
+                  <Link to="/Projects" className="nav-link"  onClick={closeMenu}>
                     Projects 
                   </Link>
                 </li>
@@ -80,14 +111,14 @@ export default function Nav() {
                   </Link>
                 </li> */}
                 <li className="nav-item">
-                  <Link to="/Contact" className="nav-link">
+                  <Link to="/Contact" className="nav-link"  onClick={closeMenu}>
                     Contact 
                   </Link>
                 </li>
               </ul>
 
              <button className="booking-btn">
-                 <Link to="/Contact" className="nav-link">
+                 <Link to="/Contact" className="nav-link"  onClick={closeMenu}>
                     Book a Meeting 
                   </Link></button>
 
