@@ -45,7 +45,7 @@ export default function About() {
                   <i className="fa-solid fa-eye"></i>
                 </div>
 
-                <h3>Our Target</h3>
+                <h3>Target</h3>
 
                 <div className="blue-line"></div>
 
@@ -69,7 +69,7 @@ project.
                   <i className="fa-solid fa-bullseye"></i>
                 </div>
 
-                <h3>Our Mission</h3>
+                <h3>Mission</h3>
 
                 <div className="blue-line"></div>
 
@@ -92,7 +92,7 @@ cost efficiency
                   <i className="fa-solid fa-gem"></i>
                 </div>
 
-                <h3>Our Vision</h3>
+                <h3>Vision</h3>
 
                 <div className="blue-line"></div>
 

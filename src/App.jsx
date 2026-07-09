@@ -7,7 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Services from "./Services";
-
+import ProjectDetails from "./ProjectDetails";
 
 
  
@@ -23,6 +23,10 @@ const router = createHashRouter([
       { path: "Services", element: <Services /> },
       { path: "Projects", element: <Projects /> },
       { path: "Contact", element: <Contact /> },
+      {
+        path: "Projects/:id",
+        element: <ProjectDetails />,
+      },
 
  
       {

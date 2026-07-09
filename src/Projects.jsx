@@ -1,9 +1,10 @@
 import PageHero from "./PageHero";
+import ProjectDetails from "./ProjectDetails";
 import bg from "./assets/helmetConst.png";
 // import projects from "./data/projectsData";
 import { projects, services } from "./data/projectsData";
 import React, { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 export default function Projects() {
 
@@ -184,23 +185,19 @@ Reset
                 key={index}
               >
 
-                <div className="project-card-page">
 
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                  />
+<Link to={`/projects/${project.id}`} className="text-decoration-none">
+  <div className="project-card-page">
 
-                  <div className="project-info">
+    <img src={project.image} alt={project.title} />
 
-                    <span>{project.category}</span>
+    <div className="project-info">
+      <span>{project.category}</span>
+      <h4>{project.title}</h4>
+    </div>
 
-                    <h4>{project.title}</h4>
-
-                  </div>
-
-                </div>
-
+  </div>
+</Link>
               </div>
 
             ))}
