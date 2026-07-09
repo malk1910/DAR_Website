@@ -103,6 +103,9 @@ body {
       #011131 100%
     );
     transition: all .35s ease;
+    isolation: isolate;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
   }
   
   .navbar-scrolled {
