@@ -335,7 +335,7 @@ export default function ProjectDetails() {
 
 <PageHero
   title={project.title}
-  subtitle={project.category}
+//   subtitle={project.category}
   bgImage={project.image}
   breadcrumb={
     <>

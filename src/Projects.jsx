@@ -1,3 +1,4 @@
+import { Pagination } from "swiper/modules";
 import PageHero from "./PageHero";
 import ProjectDetails from "./ProjectDetails";
 import bg from "./assets/helmetConst.png";
@@ -7,35 +8,6 @@ import React, { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 export default function Projects() {
-
-   
-//   const filteredProjects = projects.filter((project) => {
-
-
-//     if (search.trim() !== "") {
-//       return project.title
-//         .toLowerCase()
-//         .includes(search.toLowerCase());
-//     }
-// const serviceMatch =
-// selectedService === "" ||
-// project.service.includes(selectedService);
-
-// const filteredProjects = projects.filter(project => {
-
-//     const serviceMatch =
-//       selectedService === "" ||
-//       project.service.includes(selectedService);
-  
-//     const searchMatch =
-//       project.title.toLowerCase().includes(search.toLowerCase());
-  
-//     return serviceMatch && searchMatch;
-  
-//   });
- 
-    // return category === "All" || project.category === category;
-//   });
 
 
 const [searchParams]=useSearchParams();
@@ -48,6 +20,10 @@ const [category,setCategory]=useState("All");
 
 const [search,setSearch]=useState("");
 
+const [currentPage, setCurrentPage] = useState(1);
+
+const projectsPerPage = 9;
+
 useEffect(() => {
     setSelectedService(initialService);
   }, [initialService]);
@@ -56,6 +32,10 @@ useEffect(() => {
     "All",
     ...new Set(projects.map(project=>project.category))
     ];
+
+    useEffect(() => {
+        setCurrentPage(1);
+      }, [category, search, selectedService]);
 
     const filteredProjects = projects.filter((project) => {
         const serviceMatch =
@@ -73,24 +53,19 @@ useEffect(() => {
         return serviceMatch && categoryMatch && searchMatch;
       });
 
-    // const filteredProjects = projects.filter((project) => {
-    //     const serviceMatch =
-    //       selectedService === "" ||
-    //       project.service.includes(selectedService);
-      
-    //     const categoryMatch =
-    //       category === "All" ||
-    //       project.category === category;
-      
-    //     const searchMatch =
-    //       project.title
-    //         .toLowerCase()
-    //         .includes(search.toLowerCase());
-      
-    //     return serviceMatch && categoryMatch && searchMatch;
-    //   });
-
-
+// for Pagination
+const totalPages = Math.ceil(
+    filteredProjects.length / projectsPerPage
+  );
+  
+  const startIndex =
+    (currentPage - 1) * projectsPerPage;
+  
+  const currentProjects =
+    filteredProjects.slice(
+      startIndex,
+      startIndex + projectsPerPage
+    );
   return (
     <>
       <PageHero
@@ -106,16 +81,7 @@ useEffect(() => {
 
           <div className="project-filter">
 
-            {/* <select
-              value={category}
-              onChange={(e) => setCategory(e.target.value)}
-            >
-              {categories.map((cat, index) => (
-                <option key={index}>
-                  {cat}
-                </option>
-              ))}
-            </select> */}
+          
 <select
 
 value={category}
@@ -144,15 +110,6 @@ onChange={(e)=>setSearch(e.target.value)}
 
 />
 
-           {/* <button
-              className="reset-btn"
-              onClick={() => {
-                setCategory("All");
-                setSearch("");
-              }}
-            >
-              Reset
-            </button> */}
 
 <button
  className="reset-btn"
@@ -178,8 +135,9 @@ Reset
 
           <div className="row g-4">
 
-            {filteredProjects.map((project, index) => (
 
+            {/* {filteredProjects.map((project, index) => ( */}
+{currentProjects.map((project, index) => (
               <div
                 className="col-md-6 col-lg-4"
                 key={index}
@@ -203,6 +161,41 @@ Reset
             ))}
 
           </div>
+
+
+          <div className="pagination-wrapper">
+
+<button
+  onClick={() => setCurrentPage(currentPage - 1)}
+  disabled={currentPage === 1}
+>
+  <i className="fa-solid fa-chevron-left"></i>
+</button>
+
+{Array.from({ length: totalPages }, (_, index) => (
+
+  <button
+    key={index}
+    className={
+      currentPage === index + 1
+        ? "active-page"
+        : ""
+    }
+    onClick={() => setCurrentPage(index + 1)}
+  >
+    {index + 1}
+  </button>
+
+))}
+
+<button
+  onClick={() => setCurrentPage(currentPage + 1)}
+  disabled={currentPage === totalPages}
+>
+  <i className="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
 
         </div>
       </section>
