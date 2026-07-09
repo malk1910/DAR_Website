@@ -5,7 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // base: "/DAR_Website/",
-  build: {
-    cssMinify: 'esbuild' // Restores standard CSS behavior
-  }
+ 
 })
