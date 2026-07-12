@@ -1,4 +1,3 @@
-
 {
   "homepage": "https://malk1910.github.io/DAR_Website",
   "name": "dar-website",
@@ -14,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/poppins": "^5.2.7",
     "@fortawesome/fontawesome-free": "^7.2.0",
     "bootstrap": "^5.3.8",

@@ -18,8 +18,46 @@
 import { Link } from "react-router-dom";
 import PageHero from "./PageHero";
 import bg from "./assets/helmetConst.png";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export default function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+
+        "service_dar09",
+
+        "template_3py1xzh",
+
+        form.current,
+
+        "o2Tcj_7yKT8h61AV1"
+
+    )
+
+    .then(() => {
+
+        alert("Message Sent Successfully");
+
+    })
+
+    .catch((error) => {
+
+        console.log(error);
+
+        alert("Failed");
+
+    });
+
+    e.target.reset();
+
+};
 
   return (
     <>
@@ -131,18 +169,24 @@ export default function Contact() {
 
         <div className="col-lg-7">
 
-          <form className="contact-form">
+        <form
+ref={form}
+onSubmit={sendEmail}
+className="contact-form"
+>
+          {/* <form className="contact-form"> */}
 
-            <input type="text" placeholder="Full Name" />
+            <input type="text" name="name" placeholder="Full Name" />
 
-            <input type="email" placeholder="Email Address" />
+            <input type="email" name="email" placeholder="Email Address" />
             <input
       type="tel"
+      name="phone"
       placeholder="Phone Number"
       required
     />
 
-            <select>
+            <select name="project">
 
               <option>Project Type</option>
 
@@ -157,11 +201,12 @@ export default function Contact() {
             </select>
 
             <textarea
+            name="message"
               rows="6"
               placeholder="Tell us about your project..."
             ></textarea>
 
-            <button className="submit-btn">
+            <button type="submit" className="submit-btn">
 
               Send Message
 
