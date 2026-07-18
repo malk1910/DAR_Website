@@ -45,16 +45,14 @@ export default function About() {
                   <i className="fa-solid fa-eye"></i>
                 </div>
 
-                <h3>Target</h3>
+                <h3>Strategy</h3>
 
                 <div className="blue-line"></div>
 
                 <p>
-                At DAR, our target is to deliver innovative, sustainable
-construction solutions that turn visions into reality, meet clients'
-needs, and enhance community quality of life. We are
-committed to excellence, creativity, and innovation in every
-project.
+                Our strategy is built on quality, innovation, sustainability, and professional execution. 
+                By combining technical expertise with efficient project management, we deliver reliable solutions
+                 that exceed client expectations and create long-term value.
                 </p>
 
               </div>
@@ -160,7 +158,7 @@ cost efficiency
 
 </section>
 
-<section className="served-section">
+{/* <section className="served-section">
   <div className="container">
 
     <div className="text-center mb-5">
@@ -214,7 +212,7 @@ cost efficiency
     </div>
 
   </div>
-</section>
+</section> */}
     </div>
   );
 }

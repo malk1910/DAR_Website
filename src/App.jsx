@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import Services from "./Services";
 import ProjectDetails from "./ProjectDetails";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 
  
@@ -27,12 +28,16 @@ const router = createHashRouter([
         path: "Projects/:id",
         element: <ProjectDetails />,
       },
-
+      { 
+        path:"PrivacyPolicy", element:<PrivacyPolicy />,
+      },
  
       {
         path: "*",
         element: <NotFound />,
       },
+
+   
     ],
   },
 ]);

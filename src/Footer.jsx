@@ -47,8 +47,8 @@ export default function Footer() {
               <div className="footer-links">
                 <Link to="/Contact" >Contact Us</Link>
                 {/* <Link to="/Blog" >Blog</Link> */}
-                <Link to="/Policy" >Policy & Privacy </Link>
-                <Link to="/Terms" >Terms & Conditions</Link>
+                <Link to="/PrivacyPolicy" >Policy & Privacy </Link>
+                {/* <Link to="/Terms" >Terms & Conditions</Link> */}
 
               </div>
             </div>

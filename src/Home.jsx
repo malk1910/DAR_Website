@@ -12,8 +12,12 @@ import infra from "./assets/infrastructure.png"
 import industrial from "./assets/industrial.png"
 import mech from "./assets/electromechanical.png"
 import eductional from "./assets/eductional.png"
+import construction from "./assets/construction.png"
 import {projects , services} from "./data/projectsData";
 import HomeSlider from './HomeSlider'
+import { Link } from 'react-router-dom';
+import emailjs from "@emailjs/browser";
+
 export default function Home() {
 
   const clients = Array.from(
@@ -21,12 +25,42 @@ export default function Home() {
     (_, i) => `/client/client${i + 1}.png`
   );
 
-    // const projects = Array.from(
-    //   { length: 18 },
-    //   (_, i) => `/projects/project${i + 1}.png`
-    // );
-//     const prevRef = useRef(null);
-// const nextRef = useRef(null);
+  // For sending email
+  const form = useRef();
+
+  const sendEmail = (e) => {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+
+        "service_dar09",
+
+        "template_3py1xzh",
+
+        form.current,
+
+        "o2Tcj_7yKT8h61AV1"
+
+    )
+
+    .then(() => {
+
+        alert("Message Sent Successfully");
+
+    })
+
+    .catch((error) => {
+
+        console.log(error);
+
+        alert("Failed");
+
+    });
+
+    e.target.reset();
+
+};
 
   return (
     <div>
@@ -54,7 +88,7 @@ export default function Home() {
 
 <section className="container client-slider">
   <div className="client-title">
-    <h2 className="section-title">Our Clients</h2>
+    <h2 className="section-title">Clients</h2>
   </div>
 
   <div className="client-slider-wrapper">
@@ -71,6 +105,7 @@ export default function Home() {
 </section>
 
 {/* -----The Expertise Section----- */}
+
 <section className="expertise-sec">
 <div className="container">
   <div className="exp-title">
@@ -78,40 +113,12 @@ export default function Home() {
     Our Expertise
   </h1>
   </div>
-<div className="row row-cols-1 row-cols-md-3 g-4">
-  <div className="col">
+<div className="row row-cols-1 row-cols-md-3 g-4 pt-5">
+<div className="col">
     <div className="card h-100">
-    <img src={structural} className="card-img-top" alt="..."/>
-
+      <img src={construction} className="card-img-top" alt="Construction" />
       <div className="card-body">
-        <h5 className="card-title">Steel Structures</h5>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-    <div className="card h-100">
-    <img src={industrial} className="card-img-top" alt="..."/>
-
-      <div className="card-body">
-        <h5 className="card-title">Industrial Projects</h5>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-    <div className="card h-100">
-    <img src={medical} className="card-img-top" alt="..."/>
-
-      <div className="card-body">
-        <h5 className="card-title">Medical Construction</h5>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-    <div className="card h-100">
-    <img src={eductional} className="card-img-top" alt="..."/>
-
-      <div className="card-body">
-        <h5 className="card-title">Eductional Constructions</h5>
+        <h5 className="card-title">Construction</h5>
       </div>
     </div>
   </div>
@@ -121,7 +128,7 @@ export default function Home() {
     <img src={infra} className="card-img-top" alt="..."/>
 
       <div className="card-body">
-        <h5 className="card-title">Infrastructures & Civil works</h5>
+        <h5 className="card-title">Architecture</h5>
       </div>
     </div>
   </div>
@@ -130,7 +137,7 @@ export default function Home() {
     <img src={mech} className="card-img-top" alt="..."/>
 
       <div className="card-body">
-        <h5 className="card-title">Electromechanical Works</h5>
+        <h5 className="card-title">MEP</h5>
       </div>
     </div>
   </div>
@@ -144,40 +151,6 @@ export default function Home() {
         <div className="text-center mb-5">
           <h2 className="section-title">Our Projects</h2>
         </div>
-
-        {/* <Swiper
-          modules={[Navigation]}
-          navigation={{
-            prevEl: ".projects-prev",
-            nextEl: ".projects-next",
-          }}
-          slidesPerView={3}
-          centeredSlides
-          loop
-          spaceBetween={30}
-          speed={1300}
-          className="projectsSwiper"
-        >
-          {projects.map((project, index) => (
-            <SwiperSlide key={index}>
-              <img
-                src={project}
-                alt={`Project ${index + 1}`}
-                className="project-img"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        <div className="project-nav">
-          <button className="projects-prev">
-            <i className="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <button className="projects-next">
-            <i className="fa-solid fa-arrow-right"></i>
-          </button>
-        </div> */}
     
 
       <Swiper
@@ -213,7 +186,11 @@ export default function Home() {
   }}
 >
   {projects.map((project, index) => (
-    <SwiperSlide key={index}>
+    <SwiperSlide  key={project.id}>
+        <Link
+    to={`/projects/${project.id}`}
+    className="text-decoration-none"
+  >
   <div className="project-card">
   <img
     src={project.image}
@@ -232,6 +209,7 @@ export default function Home() {
 
   </div>
 </div>
+</Link>
     </SwiperSlide>
   ))}
 </Swiper>
@@ -258,11 +236,15 @@ export default function Home() {
        
         </div>
         <div className="right-form">
-  <form className="contact-form">
+  <form
+   ref={form}
+   onSubmit={sendEmail}
+     className="contact-form">
 
     <input
       type="text"
       placeholder="Full Name"
+      name='name'
       required
     />
 
@@ -271,6 +253,7 @@ export default function Home() {
       placeholder="Email Address"
       required
       className='text-success-emphasis'
+      name='email'
     />
 
     {/* <input
@@ -279,7 +262,7 @@ export default function Home() {
       required
     /> */}
 
-    <select required>
+    <select name='project' required>
       <option value="">Project Type</option>
       <option>Industrial</option>
       <option>Medical</option>
@@ -290,6 +273,7 @@ export default function Home() {
     </select>
 
     <textarea
+      name='message'
       rows="5"
       placeholder="Tell us about your project..."
       required

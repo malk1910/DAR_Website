@@ -28,8 +28,136 @@ export default function Services() {
 
         </div>
       </section>
+{/* ///////////////////////////////////////// */}
 
-      <section className="services-grid">
+      <section className="service-blocks">
+  <div className="container">
+
+    <div className="service-block">
+
+      <div className="service-number">
+        01
+      </div>
+
+      <div className="service-content">
+
+        <h2>Consultancy</h2>
+
+        <div className="border-line"></div>
+
+        <ul>
+
+          <li>Engineering Design</li>
+          <li>Structural Analysis</li>
+          <li>Shop Drawings</li>
+          <li>Project Planning</li>
+          <li>Quantity Surveying</li>
+
+        </ul>
+
+        {/* <Link
+          to="/Projects?service=Consultancy"
+          className="service-link"
+        >
+          View Related Projects
+          <i className="fa-solid fa-arrow-right"></i>
+        </Link> */}
+
+      </div>
+
+    </div>
+
+
+
+    <div className="service-block">
+
+      <div className="service-number">
+        02
+      </div>
+
+      <div className="service-content">
+
+        <h2>Supply</h2>
+
+        <div className="border-line"></div>
+
+        <ul>
+
+          <li>Steel Structures</li>
+          <li>Construction Materials</li>
+          <li>MEP Equipment</li>
+          <li>Electrical Panels</li>
+          <li>Mechanical Equipment</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div className="service-block">
+
+      <div className="service-number">
+        03
+      </div>
+
+      <div className="service-content">
+
+        <h2>Installation</h2>
+
+        <div className="border-line"></div>
+
+        <ul>
+
+          <li>Steel Structures</li>
+          <li>MEP Systems</li>
+          <li>Infrastructure Networks</li>
+          <li>Architectural Finishes</li>
+          <li>Civil Works</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div className="service-block">
+
+      <div className="service-number">
+        04
+      </div>
+
+      <div className="service-content">
+
+        <h2>Maintenance</h2>
+
+        <div className="border-line"></div>
+
+        <ul>
+
+          <li>Building Maintenance</li>
+          <li>MEP Maintenance</li>
+          <li>Facility Upgrades</li>
+          <li>Asset Rehabilitation</li>
+          <li>Periodic Inspection</li>
+
+        </ul>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* ////////////////////////////////////////////// */}
+
+      {/* <section className="services-grid">
         <div className="container">
 
           <div className="row g-4">
@@ -67,7 +195,7 @@ View Related Projects
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       <section className="why-dar">
 

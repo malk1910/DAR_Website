@@ -198,6 +198,8 @@ className="contact-form"
 
               <option>Infrastructure</option>
 
+              <option>Other</option>
+
             </select>
 
             <textarea
