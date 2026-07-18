@@ -258,9 +258,7 @@ export default function Home() {
        
         </div>
         <div className="right-form">
-  <form ref={form}
-onSubmit={sendEmail}
-className="contact-form">
+  <form className="contact-form">
 
     <input
       type="text"
