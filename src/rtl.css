@@ -1,0 +1,189 @@
+/* ================= RTL NAVBAR ================= */
+
+html[dir="rtl"] .navbar-container {
+    flex-direction: row-reverse;
+  }
+  
+  html[dir="rtl"] .nav-actions {
+    right: auto;
+    left: 0;
+  }
+  
+  html[lang="en"] body{
+    font-family: "Poppins", sans-serif;
+}
+
+html[lang="ar"] body{
+    font-family: "Cairo", sans-serif;
+}
+  
+  /* ================= RTL NAVBAR MOBILE ================= */
+  
+  @media (max-width: 991px) {
+  
+    html[dir="rtl"] .navbar-container {
+      flex-direction: row;
+    }
+  
+    html[dir="rtl"] .navbar-toggler {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  
+  }
+
+  /* ============== RTL Hero Swiper Buttons ================ */
+
+html[dir="rtl"] .heroSwiper .swiper-button-prev {
+    left: auto !important;
+    right: 30px !important;
+  }
+  
+  html[dir="rtl"] .heroSwiper .swiper-button-next {
+    right: auto !important;
+    left: 30px !important;
+  }
+  
+  html[dir="rtl"] .heroSwiper .swiper-button-prev:hover,
+  html[dir="rtl"] .heroSwiper .swiper-button-next:hover {
+    transform: scale(1.08);
+  }
+    /* ============== EXPERTISE SECTION IN HOME PAGE ================ */
+
+html[dir="rtl"] .learn-more:hover i{
+    transform:translateX(-6px);
+}
+
+html[dir="ltr"] .learn-more:hover i{
+    transform:translateX(6px);
+}
+
+    /* ============== CLIENTS SECTION IN HOME PAGE ================ */
+
+
+html[dir="rtl"] .client-title::after {
+    right: auto;
+    left: -50px;
+  }
+  html[dir="rtl"] .slider-track {
+    animation-name: clientsScrollRTL;
+  }
+
+/* ================= RTL PROJECTS SWIPER ================= */
+
+/* Keep Swiper itself LTR so the layout stays identical */
+html[dir="rtl"] .projectsSwiper {
+    direction: ltr;
+  }
+  
+  /* Move the Previous button to the right */
+  html[dir="rtl"] .projects-section .project-nav {
+    direction: rtl;
+  }
+  
+  /* Previous = right side */
+  html[dir="rtl"] .projects-section .projects-prev {
+    order: 1;
+  }
+  
+  /* Next = left side */
+  html[dir="rtl"] .projects-section .projects-next {
+    order: 2;
+  }
+  
+  /* Reverse the arrow icons only */
+  html[dir="rtl"] .projects-section .projects-prev i {
+    transform: rotate(180deg);
+  }
+  
+  html[dir="rtl"] .projects-section .projects-next i {
+    transform: rotate(180deg);
+  }
+
+   html[dir="rtl"] .project-overlay {
+  text-align: right;
+
+}
+
+html[dir="rtl"] .scope-row:hover{
+  transform:translateX(-12px);
+}
+
+  /* ============== RTL HOME CONTACT ============== */
+
+html[dir="rtl"] .section-contact-title::after {
+    left: auto;
+    right: 15%;
+    transform: translateX(50%);
+  }
+  
+  /* ============== RTL SEND BUTTON ARROW ============== */
+  
+  html[dir="rtl"] .submit-btn i {
+    transform: scaleX(-1);
+  }
+  
+  html[dir="rtl"] .submit-btn:hover i {
+    transform: scaleX(-1) translateX(6px);
+  }
+
+  /* ============== RTL FOOTER ============== */
+
+html[dir="rtl"] .footer-links a:hover {
+    transform: translateX(-8px);
+  }
+  /* ============== RTL HEADER / BREADCRUMB ============== */
+
+html[dir="rtl"] .about-header p {
+    padding-left: 0;
+    padding-right: 100px;
+  }
+  @media (max-width: 576px) {
+    .about-header p {
+      padding-left: 20px;
+    }
+  
+    html[dir="rtl"] .about-header p {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  }
+  /* ============== RTL SERVICES ============== */
+
+html[dir="rtl"] .service-content ul {
+    direction: rtl;
+  }
+  
+  html[dir="rtl"] .service-content li {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+  
+  html[dir="rtl"] .service-content li::before {
+    left: auto;
+    right: 0;
+  }
+  /* ============== RTL PROJECT PAGINATION ============== */
+
+  html[dir="rtl"] .pagination-wrapper {
+    direction: ltr;
+  }
+
+  /* ============== RTL CONTACT PAGE ============== */
+
+  html[dir="rtl"] .phone-input {
+    direction: ltr;
+    text-align: right;
+  }
+  html[dir="rtl"] .phone-number {
+    direction: ltr;
+    text-align: right;
+  }
+
+  /* ============== RTL 404 BUTTON ============== */
+
+html[dir="rtl"] .home-btn i {
+    transform: scaleX(-1);
+  }
+
+ 

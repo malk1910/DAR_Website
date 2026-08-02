@@ -1,0 +1,372 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "book": "Book a Meeting"
+  },
+  "home": {
+    "whoTitle": "Who We Are",
+    "whoDescription": "DAR is a dynamic construction and engineering company committed to delivering high-quality, sustainable, and innovative solutions across a wide range of sectors, including industrial, medical, educational, and infrastructure projects. With a strong focus on quality, safety, and client satisfaction, we transform ideas into successful realities through professional project execution, technical expertise, and a dedication to excellence. At DAR, we build more than structures—we build trust, long-term partnerships, and a better future.",
+
+    "clients": "Clients",
+
+    "expertise": "Our Expertise",
+    "constructionDesc": "Complete turnkey construction solutions for industrial and commercial projects.",
+    "architectureDesc": "Innovative architectural and engineering solutions tailored for every project.",
+    "mepDesc": "Mechanical, electrical and plumbing systems delivered with the highest quality standards.",
+    "learnMore": "Learn More",
+
+    "construction": "Construction",
+    "architecture": "Architecture",
+    "mep": "MEP",
+
+    "projects": "Our Projects",
+
+    "contactTitle": "Ready to Start Your Next Project?",
+    "contactDescription": "Get in touch with our expert team to discuss your project requirements and discover how we can bring your vision to life.",
+
+    "name": "Full Name",
+    "email": "Email Address",
+
+    "projectType": "Project Type",
+
+    "industrial": "Industrial",
+    "medical": "Medical",
+    "educational": "Educational",
+    "infrastructure": "Infrastructure",
+    "steel": "Steel Structures",
+    "other": "Other",
+
+    "message": "Tell us about your project...",
+
+    "send": "Send Message"
+  },
+  "about": {
+    "title": "About Us",
+
+    "strategy": "Strategy",
+    "mission": "Mission",
+    "vision": "Vision",
+
+    "strategyDesc": "Our strategy is built on quality, innovation, sustainability, and professional execution. By combining technical expertise with efficient project management, we deliver reliable solutions that exceed client expectations and create long-term value.",
+
+    "missionDesc": "Our mission is to deliver sustainable and innovative construction solutions with the highest professionalism, ensuring client satisfaction through our commitment to quality, timelines, and cost efficiency.",
+
+    "visionDesc": "We strive to be a leading construction company, delivering innovative and sustainable solutions that build lasting value, strengthen communities, and shape the future.",
+
+    "building": "Building More Than Structures,",
+    "trust": "We Build Trust.",
+
+    "clients": "Our Clients"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional Engineering & Construction Solutions.",
+
+    "heading": "Building Excellence Across Every Sector",
+
+    "description": "DAR delivers integrated construction solutions covering planning, engineering, execution and maintenance. Our team combines technical expertise with innovative thinking to deliver projects safely, efficiently and on schedule.",
+
+    "designBuild": "Design & Build",
+    "supply": "Supply",
+    "installation": "Installation",
+    "maintenance": "Maintenance",
+
+    "engineeringDesign": "Engineering Design",
+    "structuralAnalysis": "Structural Analysis",
+    "shopDrawings": "Shop Drawings",
+    "projectPlanning": "Project Planning",
+    "quantitySurveying": "Quantity Surveying",
+
+    "steelStructures": "Steel Structures",
+    "constructionMaterials": "Construction Materials",
+    "mepEquipment": "MEP Equipment",
+    "electricalPanels": "Electrical Panels",
+    "mechanicalEquipment": "Mechanical Equipment",
+
+    "mepSystems": "MEP Systems",
+    "infrastructureNetworks": "Infrastructure Networks",
+    "architecturalFinishes": "Architectural Finishes",
+    "civilWorks": "Civil Works",
+
+    "buildingMaintenance": "Building Maintenance",
+    "mepMaintenance": "MEP Maintenance",
+    "facilityUpgrades": "Facility Upgrades",
+    "assetRehabilitation": "Asset Rehabilitation",
+    "periodicInspection": "Periodic Inspection",
+
+    "whyTitle": "Why Choose DAR?",
+    "why1": "Experienced Engineering Team",
+    "why2": "High Quality Standards",
+    "why3": "Safety First Approach",
+    "why4": "On-Time Project Delivery",
+    "why5": "Cost Effective Solutions",
+    "why6": "Sustainable Construction Practices",
+
+    "Construction": "Construction",
+    "Steel Structures": "Steel Structures",
+    "Infrastructure": "Infrastructure",
+    "MEP": "MEP",
+    "Design & Build": "Design & Build",
+    "Renovation": "Renovation",
+    "Civil": "Civil ",
+    "Architectural Finishes": "Architectural Finishes "
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Explore Our Portfolio",
+    "all": "All",
+    "search": "Search project...",
+    "reset": "Reset",
+    "noProjects": "No matching projects were found.",
+
+    "project1": {
+      "title": "JamJoom Pharma Factory",
+      "client": "Jamjoom Pharma",
+
+      "scope1": "Facade complete Renovation for the main building",
+
+      "scope2": "Architectural Finishes, civil and electromechanical works for A7 administration building with built-up area 1200 sqm",
+
+      "scope3": "Construction of additional floor with Light gauge steel (L.G.S.) sections with area 5500 sqm.",
+
+      "scope4": "Manufacturing, supplying and installation of water tank."
+    },
+
+    "project2": {
+      "title": "Elbasatin Medical Health Center",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "The demolition of existing building.",
+      "scope2": "The construction of the medical health center with built-up area 5000 sqm including civil, electromechanical, infrastructure and architectural finishes."
+    },
+
+    "project3": {
+      "title": "Specialized Medical Center – Helwan",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "The construction of the specialized medical center in Helwan area including architectural, civil, electromechanical and infrastructure for plot area 3200 sqm including:",
+      "scope2": "The medical center building.",
+      "scope3": "The pharmacy building.",
+      "scope4": "Parking.",
+      "scope5": "Connecting the dry and wet utilities with the main hospital."
+    },
+
+    "project4": {
+      "title": "Azhar Institutes",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "The construction of 6 educational Azhar institutes in the governorates of Menoufia, Kafr El-Sheikh, and Port Said, with area varies from 6000 to 9000 sqm.",
+      "scope2": "Each institute include the educational building and sport courts."
+    },
+
+    "project5": {
+      "title": "Upgrading Postal Offices & Branches",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "The renovation and upgrading of several offices and branches of the National Postal Authority covering architectural and electromechanical works."
+    },
+
+    "project6": {
+      "title": "Saint-Gobain Extension",
+      "client": "Saint Gobian Egypt",
+      "scope1": "Manufacturing, supplying and installation of steel structure with area 12,000 sqm.",
+      "scope2": "Civil works for the warehouse.",
+      "scope3": "Foundations and gantries for industrial equipment"
+    },
+    "project7": {
+      "title": "Saveto Factory – Borg El Arab",
+      "client": "Saveto Egypt",
+      "scope1": "The construction of the factory with built-up area 13,000 sqm including supply & installation of steel structure, civil and electromechanical works."
+    },
+
+    "project8": {
+      "title": "Saveto Factory – Assiut",
+      "client": "Saveto Egypt",
+      "scope1": "The construction of the factory with built-up area 12,500 sqm including manufacturing, supplying & installation of steel structure, civil and electromechanical works.",
+      "scope2": "Manufacturing, supplying and installation of the silos for construction materials.",
+      "scope3": "Manufacturing, supplying and installation of a 38 m steel tower for construction materials."
+    },
+
+    "project9": {
+      "title": "Saveto Factory – Sadat",
+      "client": "Saveto Egypt",
+      "scope1": "Manufacturing, supplying and installation of silos for construction materials.",
+      "scope2": "Manufacturing, supplying and installation of a 25 m steel tower for construction materials."
+    },
+
+    "project11": {
+      "title": "Upgrading Railway Crossings",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Execution and upgrading of 24 railway crossings including infrastructure relocation, road upgrading and civil works."
+    },
+
+    "project12": {
+      "title": "Football Fields",
+      "client": "Ministry of Youth and Sports",
+      "scope1": "Construction of 18 five-a-side football fields and 8 full-size football fields including civil works, electrical works, lighting and artificial turf."
+    },
+    "project13": {
+      "title": "Upgrade Ammunition Warehouse – Factory 27",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Redesign of the steel structure.",
+      "scope2": "Repair and reinforcement of the existing steel structure with an area of 23,000 sqm.",
+      "scope3": "Construction of a new administration building with an area of 490 sqm."
+    },
+
+    "project14": {
+      "title": "Centralized Laboratory Building – Factory 27",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Construction of the centralized laboratory building with an area of 1,200 sqm including civil, electromechanical, infrastructure and architectural works."
+    },
+
+    "project15": {
+      "title": "Regiment Buildings & Fence – Factory 81",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Design and build of 33 regiment buildings and boundary fence over 900 acres including civil, architectural, infrastructure and MEP works."
+    },
+
+    "project16": {
+      "title": "Cannons Warehouse Complex – Factory 81",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Manufacturing, supplying and installation of steel structures with a built-up area of 8,700 sqm."
+    },
+
+    "project17": {
+      "title": "Armament Manufacturing Complex – Factory 100",
+      "client": "Military Production Co. for Engineering Consultancy & General Supplies",
+      "scope1": "Construction of the Armament Manufacturing Complex at Factory 100."
+    },
+
+    "project18": {
+      "title": "Alnour Steel Factory",
+      "client": "Alnour for Steel Fabrications",
+      "scope1": "Design and build of the new Alnour Steel Factory with a plot area of 20,000 sqm."
+    },
+    "project19": {
+      "title": "Coca-Cola HBC",
+      "client": "Coca-Cola HBC Egypt",
+      "scope1": "Execution of foundation, piling, civil, and reinforced concrete works for the expansion of an industrial facility, including site preparation and structural construction, while ensuring the highest standards of quality, safety, and efficiency."
+    },
+    "project20": {
+      "title": "City Gates",
+      "client": "City Edge Developments",
+      "scope1": "Execution of the Main Gate 12 and Entry Statement redevelopment works at City Gates, including architectural entrance structures, landscape elements, water features, hardscape works, lighting integration, decorative finishes, and supporting civil works. The project was delivered to enhance the visual identity, functionality, and visitor experience while meeting the highest standards of quality and execution."
+    }
+  },
+  "categories": {
+    "Construction": "Construction",
+    "Industrial": "Industrial",
+    "Medical": "Medical",
+    "Educational": "Educational",
+    "Government": "Government",
+    "Infrastructure": "Infrastructure",
+    "Sports": "Sports",
+    "Military": "Military"
+  },
+  "contact": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "We are ready to answer your questions.",
+    "getInTouch": "Get In Touch",
+    "description": "Share your project goals and we'll connect you with the right specialists for design, supervision, and delivery.",
+    "headOffice": "Head Office",
+    "address": "Giza - 6th of October City, 10th District, Silver Mall, 6th Floor - Office 10",
+    "email": "Email",
+    "phone": "Phone",
+    "follow": "Follow Us",
+    "fullName": "Full Name",
+    "emailPlaceholder": "Email Address",
+    "phonePlaceholder": "Phone Number",
+    "projectType": "Project Type",
+    "other": "Other",
+    "message": "Tell us about your project...",
+    "send": "Send Message"
+  },
+  "projectDetails": {
+    "client": "Client",
+    "category": "Category",
+    "services": "Services",
+    "scope": "Project Scope",
+    "gallery": "Project Gallery",
+    "notFound": "Project Not Found"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your Privacy Matters to Us",
+
+    "informationCollect": "Information We Collect",
+    "howUse": "How We Use Your Information",
+    "sharing": "Information Sharing",
+    "security": "Data Security",
+    "thirdParty": "Third-Party Services",
+    "rights": "Your Rights",
+    "contact": "Contact Us",
+
+    "intro": "At DAR Construction & Engineering, we respect your privacy and are committed to protecting the personal information you provide through our website.",
+
+    "collectText": "When you contact us through our forms, we may collect the following information:",
+
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "project": "Project Type",
+    "message": "Your Message",
+
+    "useText": "The information you submit is used solely to:",
+
+    "use1": "Respond to your inquiries.",
+    "use2": "Provide project consultations.",
+    "use3": "Communicate regarding our services.",
+    "use4": "Improve our customer support.",
+
+    "sharingText": "We do not sell, rent, or share your personal information with third parties except when required by law.",
+
+    "securityText": "We take reasonable measures to protect your information from unauthorized access, disclosure, or misuse.",
+
+    "thirdPartyText": "Our website may use trusted third-party services, such as EmailJS, solely for sending contact form submissions securely.",
+
+    "rightsText": "You may request access to, correction of, or deletion of your personal information by contacting us.",
+
+    "contactText": "If you have any questions regarding this Privacy Policy, please contact us at:",
+
+    "updated": "Last Updated: July 2026"
+  },
+  "footer": {
+    "company": "Our Company",
+    "description": "DAR is a trusted construction and engineering company specializing in industrial, medical, educational, and infrastructure projects, delivering excellence through quality, innovation, and sustainability.",
+    "overview": "Overview",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 DAR Build To Trust. All rights reserved."
+  },
+  "header": {
+    "subtitle": "Designing Ambitions, Realizing Visions"
+  },
+  "slider": {
+    "slide1": {
+      "title": "Building Trust Through Excellence",
+      "description": "DAR delivers high-quality construction projects that meet client expectations within budget and time, while maintaining the highest professional standards of quality and reliability."
+    },
+    "slide2": {
+      "title": "Innovative Engineering Solutions",
+      "description": "We transform ideas into reality through innovative and sustainable construction solutions across industrial, medical, and infrastructure projects."
+    },
+    "slide3": {
+      "title": "Shaping Sustainable Futures",
+      "description": "At DAR, sustainability is at the core of every project, ensuring long-lasting value and positive impact on communities and future generations."
+    },
+    "slide4": {
+      "title": "From Vision to Reality",
+      "description": "With a dedicated team and strong technical expertise, we manage and execute complex projects that turn visions into successful, real-world achievements."
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "desc": "The page you're looking for doesn't exist or may have been moved.",
+    "button": "Back to Home"
+  },
+  "loading": {
+    "line1": "Designing Ambitions",
+    "line2": "Realizing Visions"
+  }
+}
